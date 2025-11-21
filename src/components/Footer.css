@@ -1,0 +1,38 @@
+.fcountener{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-height: 210px;
+    background-color: #495E57;
+}
+
+.columen{
+    padding: 10px;
+}
+
+.footer-image{
+    height: 200px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+section h4 {
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+ul li{
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+section p{
+    font-size: 10px;
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

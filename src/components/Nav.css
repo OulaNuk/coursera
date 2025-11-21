@@ -1,0 +1,26 @@
+.countener{
+    display: grid;
+    grid-template-columns: auto auto  auto;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #EDEFEE;
+}
+
+.links{
+    display: flex;
+    grid-column: 6;
+    gap: 50px;
+
+}
+.logo{
+    grid-column: 2;
+    max-height: 80px;
+    max-width: 200px;
+
+}
+
+ul li{
+    font-size: 20px;
+    font-weight:bold;
+    
+}
