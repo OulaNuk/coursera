@@ -1,0 +1,71 @@
+.booking-form {
+  /* تفعيل Grid لتنظيم الحقول */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* عمودين متساويين */
+  gap: 20px; /* مسافة بين الحقول */
+  align-items: end; /* محاذاة الحقول عمودياً */
+}
+
+/* تنسيق مجموعة الحقل والتسمية */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* تنسيق التسميات */
+.booking-form label {
+  font-weight: bold;
+  color: #495e57; 
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+/* تنسيق حقول الإدخال والقوائم المنسدلة */
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------- */
+/* تنسيق زر الإرسال (Submit Button) */
+/* ------------------------------------------- */
+.submit-button {
+  /* وضع زر الإرسال في مسار grid منفصل (لتجنب وضعه بجوار حقل آخر) */
+  grid-column: 1 / 3; 
+  
+  background-color: #f4ce14; /* اللون الأصفر المميز */
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 16px; 
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #ee9972;
+}
+
+/* ------------------------------------------- */
+/* التنسيق المستجيب */
+/* ------------------------------------------- */
+@media (max-width: 600px) {
+  .booking-form {
+    /* في شاشات الجوال، نجعل كل الحقول تأخذ عرضاً كاملاً (عمود واحد) */
+    grid-template-columns: 1fr;
+  }
+  
+  /* الزر أيضاً يجب أن يأخذ عرضاً كاملاً */
+  .submit-button {
+    grid-column: 1 / 2;
+  }
+}

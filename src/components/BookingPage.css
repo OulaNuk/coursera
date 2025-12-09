@@ -1,0 +1,24 @@
+.booking-page-container {
+  /* الخلفية الداكنة المطابقة لقسم Hero */
+  background-color: #ffffff;
+  min-height: 80vh; /* لتغطية مساحة جيدة من الشاشة */
+  display: flex;
+  justify-content: center; /* توسيط المحتوى أفقياً */
+  align-items: center; /* توسيط المحتوى عمودياً */
+  padding: 40px 5%;
+}
+
+.booking-content-wrapper {
+  background-color: #495E57; /* يمكن جعل الخلفية بيضاء لتباين النموذج مع الخلفية الداكنة */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 600px; /* لتقييد عرض النموذج */
+  width: 100%;
+}
+
+.booking-title {
+  color: #ffffff; /* يمكن استخدام اللون الداكن هنا */
+  text-align: center;
+  margin-bottom: 30px;
+}

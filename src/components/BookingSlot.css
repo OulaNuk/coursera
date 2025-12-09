@@ -1,0 +1,26 @@
+.booking-slot {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* تنسيق للفتحات المتاحة (يمكنك استخدام اللون الأخضر أو الأصفر المميز للمطعم) */
+.slot-available {
+    background-color: #f4ce14; /* اللون الأصفر المميز */
+    color: #333;
+}
+
+.slot-available:hover {
+    background-color: #ee9972; /* تفتيح اللون عند التمرير */
+}
+
+/* تنسيق للفتحات المحجوزة (اختياري الآن، لكن لإعداد المستقبل) */
+.slot-booked {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    text-decoration: line-through;
+}

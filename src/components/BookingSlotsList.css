@@ -1,0 +1,20 @@
+.slots-list-container {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.slots-list-container h2 {
+    color: #495e57; /* اللون الداكن المميز */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slots-grid {
+    display: grid;
+    /* تخطيط لائق لعرض الأوقات المتاحة (4 أعمدة) */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+}
