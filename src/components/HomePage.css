@@ -1,0 +1,142 @@
+/* ----------------------------------------------------- */
+/* تنسيق Grid للعنصر الأب (Hero Section)  */
+/* ----------------------------------------------------- */
+.hero-section {
+  /* تفعيل Grid */
+  display: grid;
+  /* تقسيم إلى عمودين: 1.5 وحدة للنص و 1 وحدة للصورة */
+  grid-template-columns: 1.5fr 1fr;
+  /* محاذاة العناصر عمودياً في المنتصف */
+  align-items: center;
+  /* اللون الخلفي المطابق للصورة (لون داكن مائل للأخضر/الرمادي) */
+  background-color: #495e57;
+  padding: 20px 5%; 
+  color: white; /* لون النص الافتراضي */
+}
+
+/* ----------------------------------------------------- */
+/* تنسيق المحتوى النصي (العمود الأيسر)  */
+/* ----------------------------------------------------- */
+.hero-content h1 {
+  /* اللون الأصفر المميز */
+  color: #f4ce14; 
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.hero-content h2 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------------------------- */
+/* تنسيق زر الحجز (Reserve a table)  */
+/* ----------------------------------------------------- */
+.cta-button {
+  background-color: #f4ce14; /* لون الزر الأصفر */
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px; /* حواف دائرية */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------- */
+/* تنسيق حاوية الصورة (العمود الأيمن)  */
+/* ----------------------------------------------------- */
+.hero-image-container {
+  /* محاذاة الصورة لليمين */
+  text-align: right; 
+  
+}
+
+.hero-image {
+  /* لضمان عدم خروج الصورة من الحاوية */
+  width: 100%;
+  /* تحديد حجم تقريبي مطابق للتصميم */
+  max-width: 300px; 
+  height: 350px;
+  /* لملء الإطار المخصص للصورة */
+  object-fit: cover; 
+  /* جعل حواف الصورة دائرية */
+  border-radius: 16px; 
+}
+
+/* ----------------------------------------------------- */
+/* تطبيق الألوان والتخطيط من قسم الحجز (CallToAction) */
+/* ----------------------------------------------------- */
+.chicago-section {
+  /* الخلفية الداكنة المطابقة لقسم الحجز */
+    background-color: #f7f7f7;
+  color: rgb(11, 0, 0); /* لون النص الافتراضي يصبح أبيض */
+
+  /* إعداد Grid كما كان سابقاً (عمودين) */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; 
+  align-items: center; 
+  padding: 60px 5%; 
+}
+
+/* ----------------------------------------------------- */
+/* تنسيق المحتوى النصي (العمود الأيسر) */
+/* ----------------------------------------------------- */
+.chicago-content h1 {
+  /* اللون الأصفر المميز للعنوان الرئيسي */
+  color: #f4ce14; 
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.chicago-content h2 {
+  /* العنوان الفرعي يبقى أبيض */
+  color: rgb(0, 0, 0); 
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.chicago-content p {
+  /* الفقرات باللون الأبيض */
+  color: rgb(0, 0, 0); 
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* ----------------------------------------------------- */
+/* تنسيق الصورة (تأكد من تطبيق border-radius) */
+/* ----------------------------------------------------- */
+.chicago-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chicago-image {
+  width: 100%;
+  max-width: 450px; 
+  height: 400px;
+  object-fit: cover;
+  /* إضافة حواف دائرية للصورة (مثل تلك الموجودة في صورة الحجز) */
+  border-radius: 16px; 
+}
+
+/* التنسيق المستجيب (Responsive Design) */
+@media (max-width: 900px) {
+  .chicago-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

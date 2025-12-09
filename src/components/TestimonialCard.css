@@ -1,0 +1,46 @@
+.testimonial-card {
+  background-color: white; /* خلفية بيضاء للبطاقة */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-rating {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 5px; /* تباعد بسيط بين النجوم */
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewer-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* شكل دائري للصورة */
+  object-fit: cover;
+  margin-left: 10px; /* تباعد عن الاسم */
+  /* لتقليد شكل X في الـ wireframe يمكن وضع لون خلفية مؤقت */
+  background-color: #ccc; 
+}
+
+.reviewer-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.reviewer-review-text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}

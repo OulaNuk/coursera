@@ -1,0 +1,31 @@
+.testimonials-section {
+  padding: 60px 5%;
+  background-color: #495e57; /* لون الخلفية الرمادي المطابق للـ wireframe */
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* حاوية البطاقات: تطبيق Grid */
+.reviews-container {
+  display: grid;
+  /* تقسيم إلى 4 أعمدة متساوية */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* تنسيق الشاشات الأصغر */
+@media (max-width: 1024px) {
+  .reviews-container {
+    grid-template-columns: repeat(2, 1fr); /* عمودين في الأجهزة اللوحية */
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-container {
+    grid-template-columns: 1fr; /* عمود واحد في الجوالات */
+  }
+}
